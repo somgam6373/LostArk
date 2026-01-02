@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="remove Spring Security">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/domain/controller/homecontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/assets/쌀숭이.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/AuctionPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/CharacterInfo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/LegionPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/MainPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/MariShopPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/SimulatorPage.jsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQwWUJc667iNi&quot;,
+        &quot;number&quot;: 1
+      },
+      &quot;lastSeen&quot;: 1767321879799
+    }
+  ]
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LimJinOuk/LostArk.git&quot;,
+    &quot;accountId&quot;: &quot;a1421f88-aa93-442e-bd84-a1106cbec789&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="37VAxdGkkSGpcIWoYkTMLRCeNsh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.LostArkApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/me/Desktop/노트북 코딩파일/로아전정/LostArk",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\me\Desktop\노트북 코딩파일\LostArk\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\me\Desktop\노트북 코딩파일\LostArk\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LostArkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="LostArk" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jinouk.lostark.LostArkApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-84258761d1cc-intellij.indexing.shared.core-IU-243.28141.18" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.28141.18" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="" />
+      <created>1766978114537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766978114537</updated>
+      <workItem from="1766978116247" duration="1699000" />
+      <workItem from="1766981250012" duration="3436000" />
+      <workItem from="1766985463007" duration="20000" />
+      <workItem from="1766985565002" duration="31000" />
+      <workItem from="1767069488266" duration="250000" />
+      <workItem from="1767069787608" duration="8000" />
+      <workItem from="1767070053508" duration="500000" />
+      <workItem from="1767070565428" duration="1175000" />
+      <workItem from="1767319366867" duration="73000" />
+      <workItem from="1767319591961" duration="63000" />
+      <workItem from="1767319664276" duration="536000" />
+      <workItem from="1767321841784" duration="1553000" />
+      <workItem from="1767329275932" duration="74000" />
+      <workItem from="1767329456047" duration="405000" />
+      <workItem from="1767329902622" duration="6000" />
+      <workItem from="1767330231069" duration="187000" />
+    </task>
+    <task id="LOCAL-00001" summary="set">
+      <option name="closed" value="true" />
+      <created>1766978948006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1766978948006</updated>
+    </task>
+    <task id="LOCAL-00002" summary="set1">
+      <option name="closed" value="true" />
+      <created>1766979008738</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766979008738</updated>
+    </task>
+    <task id="LOCAL-00003" summary="react set">
+      <option name="closed" value="true" />
+      <created>1766981325157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1766981325157</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove Spring Security">
+      <option name="closed" value="true" />
+      <created>1766981934469</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766981934469</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="set" />
+    <MESSAGE value="set1" />
+    <MESSAGE value="react set" />
+    <MESSAGE value="remove Spring Security" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove Spring Security" />
+  </component>
+</project>

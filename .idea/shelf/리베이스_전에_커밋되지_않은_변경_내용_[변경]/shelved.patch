@@ -1,0 +1,11 @@
+Index: src/main/java/com/jinouk/lostark/main.java
+===================================================================
+diff --git a/src/main/java/com/jinouk/lostark/main.java b/src/main/java/com/jinouk/lostark/main.java
+deleted file mode 100644
+--- a/src/main/java/com/jinouk/lostark/main.java	(revision 1c58962b8b0793e8047625dd36c8b5cf089e55bf)
++++ /dev/null	(revision 1c58962b8b0793e8047625dd36c8b5cf089e55bf)
+@@ -1,4 +0,0 @@
+-package com.jinouk.lostark;
+-
+-public class main {
+-}
