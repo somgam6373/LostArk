@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="edit react design 01-01">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/controller/armoriesAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/controller/charactersAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/controller/homecontroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/service/armoriesAPIService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/service/charactersAPIService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/webClient/LlostArkWebClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/DTO/raidDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/controller/mainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/service/raidService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/domain/controller/homecontroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jinouk/lostark/LostArkApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jinouk/lostark/domain/controller/homecontroller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jinouk/lostark/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/index-BJ89mEcH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jinouk/lostark/LostArkApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +102,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.LostArkApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/me/Desktop/노트북 코딩파일/로아전정/LostArk/src/main/java/com/jinouk/lostark&quot;,
@@ -280,7 +265,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$/../.." />
+      <path value="$USER_HOME$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="set" />
