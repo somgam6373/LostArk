@@ -8,13 +8,13 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
-public class LlostArkWebClient {
+public class LostArkWebClientClass {
 
     @Value("${ApiKey}")
     private String ApiKey;
 
     @Bean
-    public WebClient lostArkWebClient() {
+    public WebClient loawebclient() {
         return WebClient.builder()
                 .baseUrl("https://developer-lostark.game.onstove.com")
                 .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(-1))

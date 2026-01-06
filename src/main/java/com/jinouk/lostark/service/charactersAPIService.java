@@ -12,9 +12,7 @@ public class charactersAPIService {
     private final WebClient lostArkWebClient;
 
     //사용자가 소유한 모든 캐릭터 목록 조회
-    public Mono<String> getCharacterSiblings() {
-        //이름은 나중에 입력값으로 바꿀 것.
-        String name = "치킨버거사주세요";
+    public Mono<String> getCharacterSiblings(String name) {
         return lostArkWebClient
                 .get()
                 .uri("/characters/{name}/siblings", name)

@@ -3,6 +3,7 @@ package com.jinouk.lostark.controller;
 import com.jinouk.lostark.service.charactersAPIService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
@@ -12,6 +13,7 @@ public class charactersAPI {
 
     private final charactersAPIService service;
 
+
     @GetMapping("/siblings")
-    public Mono<String> siblings() { return service.getCharacterSiblings(); }
+    public Mono<String> siblings(@RequestParam String query) { return service.getCharacterSiblings(query); }
 }

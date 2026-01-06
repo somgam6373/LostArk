@@ -9,13 +9,13 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 public class armoriesAPIService {
 
-    private final WebClient lostArkWebClient;
+    private final WebClient loawebclient;
 
     //치명 , 특화 , 신속 , 제압 , 인내 , 숙련등의 수치및 증감량 조회
     public Mono<String> getArmoriesCharacterProfile() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/profiles", name)
                 .retrieve()
@@ -26,7 +26,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterEquipment() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/equipment", name)
                 .retrieve()
@@ -37,7 +37,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterAvatars() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/avatars", name)
                 .retrieve()
@@ -48,7 +48,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterCombatSkills() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/combat-skills", name)
                 .retrieve()
@@ -59,7 +59,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterEngravings() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/engravings", name)
                 .retrieve()
@@ -70,7 +70,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterCards() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/cards", name)
                 .retrieve()
@@ -81,7 +81,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterGems() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/gems", name)
                 .retrieve()
@@ -92,7 +92,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterColosseums() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/colosseums", name)
                 .retrieve()
@@ -103,7 +103,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterCollectibles() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/collectibles", name)
                 .retrieve()
@@ -114,7 +114,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterArkpassive() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/arkpassive", name)
                 .retrieve()
@@ -125,7 +125,7 @@ public class armoriesAPIService {
     public Mono<String> getArmoriesCharacterArkgrid() {
         //이름은 나중에 입력값으로 바꿀 것.
         String name = "치킨버거사주세요";
-        return lostArkWebClient
+        return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/arkgrid", name)
                 .retrieve()
