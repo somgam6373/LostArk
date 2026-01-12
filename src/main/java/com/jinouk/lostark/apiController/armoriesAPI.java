@@ -1,11 +1,14 @@
-package com.jinouk.lostark.controller;
+package com.jinouk.lostark.apiController;
 
 import com.jinouk.lostark.service.armoriesAPIService;
+import com.jinouk.lostark.simulator.dto.skillsResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -18,7 +21,7 @@ public class armoriesAPI {
     }
 
     @GetMapping("/equipment")
-    public Mono<String> equipment(@RequestParam String name) {
+    public Mono<?> equipment(@RequestParam String name) {
         return service.getArmoriesCharacterEquipment(name);
     }
 
@@ -26,7 +29,7 @@ public class armoriesAPI {
     public Mono<String> avatars(@RequestParam String name) { return service.getArmoriesCharacterAvatars(name);}
 
     @GetMapping("/combat-skills")
-    public Mono<String> combat_skills(@RequestParam String name) { return service.getArmoriesCharacterCombatSkills(name);}
+    public Mono<List<skillsResponse>> combat_skills(@RequestParam String name) { return service.getArmoriesCharacterCombatSkills(name);}
 
     @GetMapping("/engravings")
     public Mono<String> engravings(@RequestParam String name) { return service.getArmoriesCharacterEngravings(name);}

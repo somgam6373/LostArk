@@ -1,4 +1,4 @@
-package com.jinouk.lostark.controller;
+package com.jinouk.lostark.apiController;
 
 import com.jinouk.lostark.service.gamecontentsAPIService;
 import lombok.RequiredArgsConstructor;

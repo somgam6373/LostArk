@@ -1,9 +1,13 @@
 package com.jinouk.lostark.service;
 
+import com.jinouk.lostark.simulator.dto.skillsResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -27,6 +31,7 @@ public class armoriesAPIService {
                 .uri("/armories/characters/{name}/equipment", name)
                 .retrieve()
                 .bodyToMono(String.class);
+
     }
 
     //사용자 캐릭터가 착용한 아바타 장비 조회
@@ -39,12 +44,13 @@ public class armoriesAPIService {
     }
 
     //캐릭터의 스킬과 스킬에 장착한 룬 정보 조회
-    public Mono<String> getArmoriesCharacterCombatSkills(String name) {
+    public Mono<List<skillsResponse>> getArmoriesCharacterCombatSkills(String name) {
         return loawebclient
                 .get()
                 .uri("/armories/characters/{name}/combat-skills", name)
                 .retrieve()
-                .bodyToMono(String.class);
+                .bodyToMono(new ParameterizedTypeReference<List<skillsResponse>>() {});
+
     }
 
     //캐릭터의 각인 정보 조회

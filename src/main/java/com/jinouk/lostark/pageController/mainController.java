@@ -1,4 +1,4 @@
-package com.jinouk.lostark.controller;
+package com.jinouk.lostark.pageController;
 
 import com.jinouk.lostark.dto.raidDto;
 import com.jinouk.lostark.service.raidService;

@@ -1,4 +1,4 @@
-package com.jinouk.lostark.controller;
+package com.jinouk.lostark.pageController;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
