@@ -1,7 +1,7 @@
-package com.jinouk.lostark.apiParse;
+package com.jinouk.lostark.apiParse.apiParseService;
 
-import com.jinouk.lostark.dto.equipmentWeaponDto;
-import com.jinouk.lostark.dto.estherEffectDto;
+import com.jinouk.lostark.apiParse.parseDto.equipmentWeaponDto;
+import com.jinouk.lostark.apiParse.parseDto.equipmentWeaponEstherDto;
 import com.jinouk.lostark.service.armoriesAPIService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -34,6 +34,7 @@ public class equipmentWeaponParseService {
                             if ("무기".equals(item.path("Type").asText())) {
                                 String grade = item.path("Grade").asText();
                                 String tooltipRaw = item.path("Tooltip").asText();
+                                System.out.println("tooltip: " + tooltipRaw);
                                 JsonNode tooltip = objectMapper.readTree(tooltipRaw);
 
                                 if ("에스더".equals(grade)) {
@@ -51,34 +52,30 @@ public class equipmentWeaponParseService {
     }
 
     private void processEstherWeapon(JsonNode item, JsonNode tooltip) {
-        estherEffectDto dto = new estherEffectDto();
+        equipmentWeaponEstherDto dto = new equipmentWeaponEstherDto();
 
         try {
             dto.setName(item.path("Name").asText("이름 없음"));
             dto.setGrade("에스더");
             dto.setQuality(tooltip.path("Element_001").path("value").path("qualityValue").asInt(0));
 
-            // 1. 스탯 추출
-            estherEffectDto.statsDto stats = new estherEffectDto.statsDto();
+            equipmentWeaponEstherDto.statsDto stats = new equipmentWeaponEstherDto.statsDto();
             stats.setAttackPower(parseNumber(tooltip.path("Element_005").path("value").path("Element_001").asText("")));
             stats.setAdditionalDamagePercent(parseDouble(tooltip.path("Element_007").path("value").path("Element_001").asText("")));
             dto.setStats(stats);
 
-            // 2. 에스더 효과 노드 접근 (중요: Element_008 -> value -> Element_000 순서)
+
             JsonNode estherNode = tooltip.path("Element_008").path("value").path("Element_000");
 
             if (!estherNode.isMissingNode()) {
-                estherEffectDto.estherDto estherInfo = new estherEffectDto.estherDto();
+                equipmentWeaponEstherDto.estherDto estherInfo = new equipmentWeaponEstherDto.estherDto();
 
-                // topStr에서 [실리안] 추출
                 String topStr = estherNode.path("topStr").asText("");
                 estherInfo.setName(extractBetweenBrackets(topStr));
 
-                // 결속 효과 리스트 파싱 (Element_001, Element_002만 실제 효과임)
-                List<estherEffectDto.linkEffectDto> effects = new ArrayList<>();
+                List<equipmentWeaponEstherDto.linkEffectDto> effects = new ArrayList<>();
                 JsonNode contents = estherNode.path("contentStr");
 
-                // Element_000은 '엘라 부여' 단계 설명이므로 제외하고 001부터 가져옴
                 if (contents.has("Element_001")) effects.add(parseLinkEffect(contents.path("Element_001").path("contentStr").asText("")));
                 if (contents.has("Element_002")) effects.add(parseLinkEffect(contents.path("Element_002").path("contentStr").asText("")));
 
@@ -103,7 +100,7 @@ public class equipmentWeaponParseService {
                 System.out.println("▶ 전용에스더: " + (estherName.isEmpty() ? "추출 실패 (topStr 확인 필요)" : estherName));
                 System.out.println("----------------------------------------");
 
-                for (estherEffectDto.linkEffectDto e : dto.getEsther().getEffects()) {
+                for (equipmentWeaponEstherDto.linkEffectDto e : dto.getEsther().getEffects()) {
                     System.out.println("▶ 결속 효과: " + e.getName());
                     System.out.println("   - 지속시간: " + e.getDurationSeconds() + "초");
                     if (e.getStatIncrease() != null) {
@@ -125,7 +122,6 @@ public class equipmentWeaponParseService {
         }
     }
 
-    // --- [일반 무기 처리 로직] ---
     private void processNormalWeapon(JsonNode item, JsonNode tooltip) {
         String fullName = item.path("Name").asText();
         int enhancementLevel = Integer.parseInt(fullName.split(" ")[0].replace("+", ""));
@@ -144,19 +140,14 @@ public class equipmentWeaponParseService {
         System.out.println("추피: " + dto.getAdditionalDamagePercent());
     }
 
-    // --- [보조 파싱 메소드] ---
-
-    // 텍스트에서 결속 효과 객체 생성
-    private estherEffectDto.linkEffectDto parseLinkEffect(String rawText) {
-        estherEffectDto.linkEffectDto effect = new estherEffectDto.linkEffectDto();
+    private equipmentWeaponEstherDto.linkEffectDto parseLinkEffect(String rawText) {
+        equipmentWeaponEstherDto.linkEffectDto effect = new equipmentWeaponEstherDto.linkEffectDto();
         String cleanText = rawText.replaceAll("<[^>]*>", ""); // 태그 제거
 
-        // 이름 추출: ' ' 사이의 문자열 (예: 기사의 긍지)
         Pattern namePattern = Pattern.compile("'(.*?)'");
         Matcher nameMatcher = namePattern.matcher(cleanText);
         if (nameMatcher.find()) effect.setName(nameMatcher.group(1));
 
-        // 숫자들 추출 (순서대로: 지속시간, 스탯 혹은 범위/증가량)
         List<Integer> numbers = new ArrayList<>();
         Matcher numMatcher = Pattern.compile("\\d+").matcher(cleanText);
         while (numMatcher.find()) {
@@ -167,7 +158,7 @@ public class equipmentWeaponParseService {
             effect.setDurationSeconds(numbers.get(0));
 
             if (cleanText.contains("힘, 민첩, 지능")) { // 1단계 결속
-                estherEffectDto.statIncreaseDto si = new estherEffectDto.statIncreaseDto();
+                equipmentWeaponEstherDto.statIncreaseDto si = new equipmentWeaponEstherDto.statIncreaseDto();
                 int statVal = numbers.get(1);
                 si.setStrength(statVal);
                 si.setDexterity(statVal);

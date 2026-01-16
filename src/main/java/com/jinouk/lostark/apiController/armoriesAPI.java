@@ -1,7 +1,7 @@
 package com.jinouk.lostark.apiController;
 
-import com.jinouk.lostark.apiParse.characterProfileParseService;
-import com.jinouk.lostark.apiParse.equipmentWeaponParseService;
+import com.jinouk.lostark.apiParse.apiParseService.characterProfileParseService;
+import com.jinouk.lostark.apiParse.apiParseService.equipmentWeaponParseService;
 import com.jinouk.lostark.service.armoriesAPIService;
 import com.jinouk.lostark.simulator.dto.skillsResponse;
 import lombok.RequiredArgsConstructor;

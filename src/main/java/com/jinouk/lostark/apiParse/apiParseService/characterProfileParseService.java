@@ -1,5 +1,5 @@
-package com.jinouk.lostark.apiParse;
-import com.jinouk.lostark.dto.characterProfileDto;
+package com.jinouk.lostark.apiParse.apiParseService;
+import com.jinouk.lostark.apiParse.parseDto.characterProfileDto;
 import com.jinouk.lostark.service.armoriesAPIService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

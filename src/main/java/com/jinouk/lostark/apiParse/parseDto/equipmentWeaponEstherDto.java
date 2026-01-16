@@ -1,4 +1,4 @@
-package com.jinouk.lostark.dto;
+package com.jinouk.lostark.apiParse.parseDto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,7 +6,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class estherEffectDto {
+public class equipmentWeaponEstherDto {
     private String name;
     private String grade;
     private int quality;
@@ -22,7 +22,7 @@ public class estherEffectDto {
     @Getter @Setter
     public static class estherDto {
         private String name;
-        private List<linkEffectDto> effects; // 결속 효과 리스트
+        private List<linkEffectDto> effects;
     }
     
     @Getter @Setter
